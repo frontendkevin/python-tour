@@ -1,0 +1,5 @@
+L=list(range(100))
+print(L[0:10])
+print(L[-10:])
+print(L[10:20])
+print(L[1:10:3])
