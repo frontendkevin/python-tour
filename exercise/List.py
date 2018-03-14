@@ -1,5 +1,7 @@
+#coding=utf-8
 #删除列表元素
 list1=[1,4,5,6,67]
+list2=['a','d','c']
 del list1[2]
 print(list)
 #列表合并
@@ -31,3 +33,21 @@ print(list1)
 #List Comprehensions
 list9=[str(x)+char for x in range(1,4) for char in 'abcd']
 print(list9)
+list10 = [2,4,5,6,7,8]
+list11 = ['d','g']
+list10.extend(list11)
+print(list10)
+print(list11.__contains__('d'))
+# del item
+list10.remove('d')
+list10.pop()
+del list10[1]
+
+print(list10)
+list10.insert(0,'aaaa')
+print(list10)
+list10.insert(2,'bbbb')
+print(list10)
+
+#判断 是否在数组中
+print('3' in list10)
