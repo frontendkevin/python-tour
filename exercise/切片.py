@@ -3,3 +3,9 @@ print(L[0:10])
 print(L[-10:])
 print(L[10:20])
 print(L[1:10:3])
+str="123456789"
+print(str[0:3])
+print(str[::])
+print(str[::2])
+#倒序
+print(str[-1:0:-1])
