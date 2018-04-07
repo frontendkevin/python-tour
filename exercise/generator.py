@@ -37,4 +37,19 @@ def trangel(max):
 tran=trangel(10)
 for key in tran:
     print(key)
+#send function
+def test():
+    val= yield 1
+    print(val)
+    val= yield 2
+    val=yield 3
+t =  test()
+t1 = next(t)
+print(t1)
+t2 = t.send('hhh')
+print(t2)
+t3 = next(t)
+print(t3)
+
+
 
