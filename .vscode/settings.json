@@ -1,3 +1,7 @@
 {
+<<<<<<< HEAD
     "python.pythonPath": "/usr/bin/python2.7"
+=======
+    "python.linting.pylintEnabled": false
+>>>>>>> dbc7168fad3bd52ea680b0b2b33870216734eca3
 }
