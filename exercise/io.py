@@ -1,9 +1,17 @@
-
-# 复制图片
-with open('./files/bg.png','rb') as f:
-    w=open('./files/bg1.png','wb')
-    w.write(f.read())
-# 复制文本
-with open('./files/hello.txt','r') as a:
-    b=open('./files/world.txt','a')
-    b.write(a.read())
+# copy file
+old = input('plase input filename')
+with open(old,'r') as f:
+    print(f.read())
+w=open('./files/world.txt','w')
+w.write(f.read())
+w.close()
+#big file copy
+# newfile= open('xxx.txt')
+# oldfile=open('yy.txt')
+# while True:
+#     content = oldfile.read(1024)
+#     if len(content)==0:
+#         break
+#     newfile.write(content)
+# newfile.close()
+# oldfile.close()

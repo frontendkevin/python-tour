@@ -22,6 +22,8 @@
 # print(type(lambda x:x)==types.LambdaType)
 # print(type(( x for x in [1,3]))==types.GeneratorType)
 # print(type(int)==types.TypeType)
+
+
 from types import MethodType
 #创建一个方法
 def set_age(self, arg):
@@ -33,4 +35,34 @@ s_one=Student()
 Student.set_age=MethodType(set_age,Student)
 s_one.set_age(12)
 print(s_one.age)
+
+
+class Test(object):
+    def __init__(self):
+        self.__money=40
+    def getMoney(self):
+        return self.__money
+    def setMoney(self,val):
+        self.__money=val
+    money=property(getMoney,setMoney)
+test= Test()
+print(test.money)      
+test.money=1000
+print(test.money)  
+
+
+
+class Human(object):
+    @property
+    def height(self):
+        return self.__height
+
+    @height.setter
+    def height(self,val):
+        print('-----------')
+        self.__height=val
+        print(self.__height)
+human=Human()
+human.height =999
+  
 
